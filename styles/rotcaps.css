@@ -77,6 +77,7 @@ a img:hover {
     left: 2vmax;
 }
 .copyright {
+    display: block;
     position: absolute;
     font-size: 0.8em;
     bottom:0;
@@ -101,49 +102,56 @@ a img:hover {
 
   @media only screen and (max-width: 700px) {
 
-      .mobile-nav {
-          position: relative;
-          display: block;
-          color: white;
-          font-size: 2em;
-          top: 15vmax;
-          text-align: center;
-          left: -5vw;
-      }
-      .mobile-nav ul {
-        list-style: none;
-      }
-      .mobile-nav li {
-          background-color: black;
-          margin: 1.5vmax;
-          width: 90vw;
-            line-height: 8vmax;
-            
-      }
-      .mobile-nav li:hover {
-        animation: shake 0.5s;
-        animation-iteration-count: infinite;
-      }
-      .mobile-nav a {
-          text-decoration: none;
-          color: white;
-      }
-      .about, .archive, .contact, .currentsale, .shop {
-          display: none;
-      }
-      #skull {
-          top: -15vmax;
-          padding-top: 2vmax;
-      }
-      #logo {
-          display: none;
-      }
-      #button {
+    .mobile-nav {
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 2em;
+        top: 15vmax;
+        text-align: center;
+        left: -5vw;
+        margin-bottom: 5vmax;
+    }
+    .mobile-nav ul {
+      list-style: none;
+    }
+    .mobile-nav li {
+        background-color: black;
+        margin: 1.5vmax;
+        width: 90vw;
+          line-height: 8vmax;
+          
+    }
+    .mobile-nav li:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+    .mobile-nav a {
+        text-decoration: none;
+        color: white;
+    }
+    .about, .archive, .contact, .currentsale, .shop {
+        display: none;
+    }
+    #skull {
         top: -15vmax;
-      }
-      #wrap {
-          height: 100vh;
-      }
-  }
+        padding-top: 2vmax;
+    }
+    #logo {
+        display: none;
+    }
+    #button {
+      top: -15vmax;
+      padding-top: 2vmax;
+    }
+    #wrap {
+        height: 100vh;
+    }
+    html, body {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+
 
 
