@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' href="images/favicon.ico" type="image/x-icon"/>
+    <title>rotcaps</title>
+    <link rel="stylesheet" href="styles/rotcaps.css">
+</head>
+<body>
+<div id="wrap">
+    <a href="index.html"><img id ="logo" src="images/rotcapslogobw.svg"/></a>
+    <img id="button" src="images/off.gif" onclick="turnOff()"/>
+    <img id="skull" src="images/main.gif"/>
+    <div class="about"><a href="about.html"><img id="about" src="images/about1.svg" onmouseover="document.getElementById('skull').src='images/left.gif'"/></a></div>
+    <div class="shop"><a href="shop.html"><img id="shop" src="images/shop1.svg" onmouseover="document.getElementById('skull').src='images/topleft.gif'"/></a></div>
+    <div class="currentsale"><a><img id="currentsale" src="images/currentsale1.svg" onmouseover="document.getElementById('skull').src='images/top.gif'"/></a></div>
+    <div class="archive"><a href="archive.html"><img id="archive" src="images/archive1.svg" onmouseover="document.getElementById('skull').src='images/topright.gif'"/></a></div>
+    <div class="contact"><a href="contact.html"><img id="contact" src="images/contact1.svg" onmouseover="document.getElementById('skull').src='images/right.gif'"/></a></div>
+    <footer class="copyright">
+    </footer>
+
+    <script>
+        var isOn = true;
+        function turnOff() {
+            var x = document.getElementById("button");
+            //var currentImage = document.getElementById("skull").src;
+            if (isOn == true) {
+                x.src = "";
+                x.src = "images/off.gif";
+                x.style.opacity = "1";
+                isOn = false;
+            } else {
+                x.style.opacity = "0";
+                document.getElementById("skull").src="";
+                document.getElementById("skull").src="images/main.gif";
+                isOn = true;
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>
