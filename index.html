@@ -9,6 +9,15 @@
 </head>
 <body>
 <div id="wrap">
+    <div class="mobile-nav">
+        <ul>
+            <a><li id="nav-currentsale" onmouseover="document.getElementById('skull').src='images/top.gif'">current sale</li></a>
+            <a href="shop.html" onmouseover="document.getElementById('skull').src='images/main.gif'"><li id="nav-shop">shop</li></a>
+            <a href="archive.html"><li id="nav-archive">archive</li></a>
+            <a href="about.html"><li id="nav-about">about</li></a>
+            <a href="contact.html"><li id="nav-contact">contact</li></a>
+        </ul>
+    </div>
     <a href="./"><img id ="logo" src="images/rotcapslogobw.svg"/></a>
     <img id="button" src="images/off.gif" onclick="turnOff()"/>
     <img id="skull" src="images/main.gif"/>
@@ -18,6 +27,7 @@
     <div class="archive"><a href="archive.html"><img id="archive" src="images/archive1.svg" onmouseover="document.getElementById('skull').src='images/topright.gif'"/></a></div>
     <div class="contact"><a href="contact.html"><img id="contact" src="images/contact1.svg" onmouseover="document.getElementById('skull').src='images/right.gif'"/></a></div>
     <footer class="copyright">
+        <p>&copy; 2020 rotcaps. All Rights Reserved.</p>
     </footer>
 
     <script>

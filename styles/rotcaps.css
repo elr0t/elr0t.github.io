@@ -6,13 +6,17 @@ html {
         ),
         url("../images/junk-mail.jpg");
     background-repeat: repeat;
-    font-family: sans-serif;
+    font-family: VCR OSD Mono;
+    src: url('../fonts/VCR_OSD_MONO.ttf');
     height: 100%;
 }
 html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+}
+.mobile-nav {
+    display: none;
 }
 #wrap {
 	width: 100%;
@@ -73,6 +77,12 @@ a img:hover {
     top: 2vmax;
     left: 2vmax;
 }
+.copyright {
+    position: fixed;
+    font-size: 0.8em;
+    bottom:0;
+    color: #dddddd;
+}
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -87,3 +97,39 @@ a img:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
   
+  /* MOBILE */
+
+  @media only screen and (max-width: 700px) {
+
+      .mobile-nav {
+          position: relative;
+          display: block;
+          color: white;
+          font-size: 2em;
+          top: 15vmax;
+          text-align: center;
+          left: -5vw;
+      }
+      .mobile-nav ul {
+        list-style: none;
+      }
+      .mobile-nav li {
+          background-color: black;
+          margin: 1.5vmax;
+          width: 90vw;
+            line-height: 8vmax;
+      }
+      .mobile-nav a {
+          text-decoration: none;
+          color: white;
+      }
+      .about, .archive, .contact, .currentsale, .shop {
+          display: none;
+      }
+      #skull {
+          top: -15vmax;
+      }
+      #button {
+          display: none;
+      }
+  }
