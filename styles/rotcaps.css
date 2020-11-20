@@ -110,7 +110,6 @@ a img:hover {
         top: 15vmax;
         text-align: center;
         left: -5vw;
-        margin-bottom: 5vmax;
     }
     .mobile-nav ul {
       list-style: none;
@@ -145,7 +144,7 @@ a img:hover {
       padding-top: 2vmax;
     }
     #wrap {
-        height: 100vh;
+        height: auto;
     }
     html, body {
         overflow-y: auto;
