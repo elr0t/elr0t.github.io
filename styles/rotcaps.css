@@ -104,6 +104,7 @@ a img:hover {
     position: relative;
     height: auto;
     color: white;
+    font-family: 'vcr_osd_monoregular', serif;
 }
 #shy {
     width: auto;
