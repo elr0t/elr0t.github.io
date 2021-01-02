@@ -124,6 +124,10 @@ a img:hover {
     text-decoration: none;
 }
 
+#contact_text a:hover {
+    text-decoration: underline;
+}
+
 .tooltip {
     position: relative;
     color: #ff6a70;
